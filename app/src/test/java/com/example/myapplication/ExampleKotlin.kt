@@ -19,7 +19,7 @@ data class Course(
 // Latihan 1: Extension Function untuk menampilkan info mata kuliah
 fun Course.displayInfo(): String = "$code - $name - $status"
 
-// Latihan 2: Fungsi describe menggunakan when (exhaustive)
+// Latihan 2: Fungsi describe menggunakan when
 fun describe(status: CourseStatus): String = when (status) {
     CourseStatus.ACTIVE -> "Currently studying"
     CourseStatus.COMPLETED -> "Completed studies"
@@ -40,7 +40,7 @@ fun MutableList<Course>.addCourse(course: Course): Boolean {
     return false
 }
 
-// UNIT TEST UNTUK MENJALANKAN LATIHAN 1 - 5
+// UNIT TEST MENJALANKAN LATIHAN 1 - 5
 
 class ExampleKotlin {
 
